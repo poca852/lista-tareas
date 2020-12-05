@@ -1,7 +1,10 @@
 
 
-body {
-    padding: 50px;
+#root{
+    margin: auto;
+    max-width: 1000px;
+    padding: 7px 5px;
+    width: 100%;
 }
 
 p {

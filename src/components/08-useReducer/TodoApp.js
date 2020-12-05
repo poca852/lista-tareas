@@ -50,35 +50,23 @@ export const TodoApp = () => {
 
 
     return (
-        <div>
-            <h1>TodoApp ( { todos.length } ) </h1>
+        <div className='p-1'>
+            <h3>Lista de Tareas <small>( { todos.length } )</small> </h3>
             <hr />
-
             <div className="row">
-
-                <div className="col-7">
-
+                <div className="col-12">
+                    <TodoAdd 
+                        handleAddTodo={ handleAddTodo }
+                    />
+                </div>
+                <div className="col-12">
                     <TodoList 
                         todos={ todos }
                         handleDelete={ handleDelete }
                         handleToggle={ handleToggle }
                     />
-
                 </div>
-
-
-                <div className="col-5">
-                    
-                    <TodoAdd 
-                        handleAddTodo={ handleAddTodo }
-                    />
-                    
-
-                </div>
-
-
             </div>
-
         </div>
     )
 }
